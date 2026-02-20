@@ -1,0 +1,126 @@
+/* Variables */
+:root {
+    /* Colores */
+    --clr-p-red: hsl(0, 78%, 62%);
+    --clr-p-cyan: hsl(180, 62%, 55%);
+    --clr-p-orange: hsl(34, 97%, 64%);
+    --clr-p-blue: hsl(212, 86%, 64%);
+
+    --clr-n-grey-500: hsl(234, 12%, 34%);
+    --clr-n-grey-400: hsl(212, 6%, 44%);
+    --clr-n-white: hsl(0, 0%, 100%);
+
+    /* Fuentes */
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fs-normal: 15px;
+    --fs-title: 25px;
+    --fs-subtitle: 22px;
+
+    --fw-200: 200;
+    --fw-400: 400;
+    --fw-600: 600;
+}
+
+/* Body */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-normal);
+    color: var(--clr-n-grey-400);
+    background-color: var(--clr-n-white);
+}
+
+/* Main */
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-page {
+    text-align: center;
+    padding: 1rem;
+}
+
+.header-page h1 {
+    font-size: var(--fs-title);
+    color: var(--clr-n-grey-500);
+    font-weight: var(--fw-600);
+}
+
+.header-page h1 span {
+    display: block;
+    color: var(--clr-n-grey-400);
+    font-weight: var(--fw-200);
+}
+
+.header-page p {
+    color: var(--clr-n-grey-500);
+    padding: 0 2rem;
+}
+
+.cards {
+    margin: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: var(--clr-n-white);
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
+}
+
+.card--supervisor {
+    border-top: 3px solid var(--clr-p-cyan);
+}
+
+.card--team-builder {
+    border-top: 3px solid var(--clr-p-red);
+}
+
+.card--karma {
+    border-top: 3px solid var(--clr-p-orange);
+}
+
+.card--calculator {
+    border-top: 3px solid var(--clr-p-blue);
+}
+
+.card h2 {
+    margin: 0;
+    font-size: var(--fs-subtitle);
+    color: var(--clr-n-grey-500);
+    font-weight: var(--fw-600);
+}
+
+.card p {
+    margin: 0.25rem 0 1rem 0;
+}
+
+.card-image {
+    align-self: flex-end;
+    padding: 1.2rem 0 1.2rem 1.2rem;
+}
+
+
+
+/* Footer */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
